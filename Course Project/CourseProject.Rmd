@@ -1,0 +1,52 @@
+---
+title: "Regression Models Course Project"
+author: "Muralidhar Areti"
+date: "August 21, 2015"
+output: pdf_document
+---
+
+# Document Requirements
+Don't forget to remove this section, it takes up quite a bit of real estate...  
+
+* Interpret coefficients properly
+* Exploratory data analyses
+* Fit multiple models and detail the strategy for model selection
+* Answer the question of interest (or detail why the questions are not answerable) 
+* Do a residual plot and some diagnostics
+* Quantify the uncertainty in the conclusions and/or perform inference
+* Report should be no more than 2 pages, appendix can be no more than 5 pages
+* Appendix can only have figures
+
+# Executive Summary
+There are two common interests from different groups when it comes to cars: performance and efficiency. Performance is dictated by how fast a car can go in a straight line, through a corner or on a circuit where efficiency is determined by how many miles the car can travel per gallon. The `mtcars` dataset was extracted from the 1974 _Motor Trend_ US magazine providing data based on 10 aspects of car design and performance for 32 cars. The purpose of this paper is to determine the tradeoffs and impact of these 10 variables to determine which factors will sway a car to the performance end or the efficiency end (or which cars have the best of both worlds!)  
+
+# Exploratory Data Analysis
+Initial exploratory data analysis was used to ensure we had a good understanding of our dataset. The main packages loaded are the `dplyr` and `ggplot2` to assist us with processing and charting the data. 
+
+```{r, echo=FALSE, results='hide'}
+suppressPackageStartupMessages(library(dplyr))
+library(ggplot2)
+suppressPackageStartupMessages(library(GGally))
+data(mtcars)
+
+mtcars_dim = dim(mtcars)
+head(mtcars)
+
+```
+
+# Statistical Inference
+
+
+# Regression Analysis
+
+
+# Conclusion
+
+\pagebreak  
+
+# Appendix
+
+Plotting pairs from `GGally` library using `ggpairs`
+```{r}
+ggpairs(mtcars)
+```
